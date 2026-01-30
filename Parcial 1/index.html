@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ＶＡＰＯＲＷＡＶＥ // 蒸気波</title>
+    <style>
+        /* --- CONFIGURACIÓN ESTÉTICA --- */
+        :root {
+            --pink: #ff71ce;
+            --blue: #01cdfe;
+            --cyan: #05ffa1;
+            --purple: #b967ff;
+            --yellow: #fffb96;
+            --bg-overlay: rgba(20, 20, 20, 0.7);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            background-color: #1a1a1a;
+            
+            background-image: img('C:\Users\ingelaptop\Desktop\VI SEM\TOP. PROG\vapor.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 10;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: var(--bg-overlay);
+            backdrop-filter: blur(10px); /* Efecto borroso de fondo */
+            border: 3px double var(--pink);
+            box-shadow: 10px 10px 0px var(--blue);
+            position: relative;
+            z-index: 5;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: var(--cyan);
+            text-shadow: 3px 3px var(--pink);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--yellow);
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--purple);
+            color: var(--pink);
+            padding-bottom: 5px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: #333;
+            border: 2px dashed var(--cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            color: var(--cyan);
+            overflow: hidden;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            color: var(--blue);
+        }
+
+        .glitch {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="glitch">蒸気波 VAPORWAVE</h1>
+        <p class="subtitle">It's all in your head / Todo está en tu cabeza</p>
+
+        <section>
+            <h2>¿Qué es el Vaporwave?</h2>
+            <p>
+                Surgido a principios de la década de 2010, el <strong>Vaporwave</strong> no es solo un género musical, 
+                sino una experiencia estética y artística. Se basa en la apropiación de sonidos e imágenes de los 
+                años 80 y 90, desde música de elevador y comerciales viejos hasta software de Windows 95.
+            </p>
+        </section>
+
+        <div class="image-placeholder">
+        </div>
+
+        <section>
+            <h2>La Estética (Aesthetic)</h2>
+            <p>
+                Visualmente, el Vaporwave es inconfundible. Se nutre de:
+                <ul>
+                    <li>Esculturas clásicas (el busto de Helios es un icono).</li>
+                    <li>Diseño web de los 90 y gráficos "lo-fi".</li>
+                    <li>Paisajes urbanos de Japón y luces neón.</li>
+                    <li>Crítica irónica al consumismo y la tecnología obsoleta.</li>
+                </ul>
+            </p>
+        </section>
+
+        <div class="image-placeholder">
+        </div>
+
+        <section>
+            <h2>Artistas Clave</h2>
+            <p>
+                Si quieres empezar a escuchar, no puedes saltarte a:
+                <strong>Macintosh Plus</strong> (su álbum <em>Floral Shoppe</em> es la biblia), 
+                <strong>Saint Pepsi</strong>, <strong>Blank Banshee</strong> y <strong>2814</strong>.
+            </p>
+        </section>
+
+        <div class="footer">
+            <p> 2 0 2 6  ©  A E S T H E T I C _ C O R P </p>
+        </div>
+    </div>
+
+</body>
+</html>
